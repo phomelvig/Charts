@@ -765,6 +765,8 @@ open class BarLineChartViewBase: ChartViewBase, BarLineScatterCandleBubbleChartD
                 
                 let lastHighlighted = self.lastHighlighted
                 
+                print("BarLineChartViewBase.panGestureRecognized: h: \(h), lastHighlighted: \(lastHighlighted), equal: \(h == lastHighlighted)")
+                
                 if h != lastHighlighted
                 {
                     self.lastHighlighted = h
